@@ -1,5 +1,5 @@
 <h1 align="center"> livewire-alert </h1>
-
+[![Build Status](https://travis-ci.com/fengzi91/livewire-alert.svg?branch=main)](https://travis-ci.com/fengzi91/livewire-alert)
 <p align="center"> livewire alert 组件.</p>
 
 
@@ -8,10 +8,47 @@
 ```shell
 $ composer require zys/livewire-alert -vvv
 ```
+## Requirements
+This package uses Livewire under the hood. Please make sure you include it in your dependencies before using this package.
+
+- PHP 7.2 or higher
+- Laravel 8
+- Livewire
+- tailwindcss
 
 ## Usage
 
-TODO
+Add livewire-alert component
+```html
+<body>
+...
+@livewire('livewire-alert')
+</body>
+```
+Show message in livewire component
+
+```php
+
+public function showMessage()
+{
+    ...
+    $this->alert('info', 'Message~', ['content' => 'Message Content', 'timeout' => 3000]);
+}
+```
+Show Message in javascript
+
+```javascript
+window.livewire.emitTo('livewire-alert', 'livewireAlert', {
+    type: 'info',
+    message: 'Message',
+    options: {
+        content: 'Message content~',
+        timeout: 3000,
+    }
+})
+```
+
+
 
 ## Contributing
 
