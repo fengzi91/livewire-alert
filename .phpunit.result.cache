@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":265:{a:2:{s:7:"defects";a:2:{s:30:"AlertTest::testCanShowAMessage";i:4;s:53:"Zys\LivewireAlert\Test\AlertTest::testCanShowAMessage";i:4;}s:5:"times";a:2:{s:30:"AlertTest::testCanShowAMessage";d:0.53;s:53:"Zys\LivewireAlert\Test\AlertTest::testCanShowAMessage";d:0.499;}}}
