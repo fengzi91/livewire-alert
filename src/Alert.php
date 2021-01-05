@@ -7,15 +7,23 @@ use Livewire\Component;
 class Alert extends Component
 {
     public $title = null;
-    public $content = null;
+    public $message = null;
     public $timeout = 3000;
     public $isShow = false;
     public $type = 'primary';
+    public $options = [];
     protected $listeners = ['livewireAlert'];
 
-    public function livewireAlert($content = null, $title = null, $type = 'info', $timeout = 3000)
+    public function mount()
     {
-        $this->fill(compact('timeout', 'content', 'title', 'type'));
+        $this->options = config('livewire-alert');
+    }
+    public function livewireAlert($message = [])
+    {
+        if (isset($message['options'])) {
+            $this->options = array_merge($this->options, $message['options']);
+        }
+        $this->fill($message);
         $this->emitSelf('show');
     }
 
