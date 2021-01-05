@@ -1,0 +1,24 @@
+{
+    "name": "zys/livewire-alert",
+    "description": "livewire alert 组件",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fengzi91",
+            "email": "fengzi91@vip.qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Zys\\LivewireAlert\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zys\\LivewireAlert\\ServiceProvider"
+            ]
+        }
+    }
+}
