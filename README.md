@@ -1,5 +1,7 @@
 <h1 align="center"> livewire-alert </h1>
+
 [![Build Status](https://travis-ci.com/fengzi91/livewire-alert.svg?branch=main)](https://travis-ci.com/fengzi91/livewire-alert)
+![Packagist License](https://img.shields.io/packagist/l/zys/livewire-alert)
 <p align="center"> livewire alert 组件.</p>
 
 
